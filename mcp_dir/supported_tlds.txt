@@ -1,0 +1,16 @@
+.com
+.net
+.org
+.info
+.biz
+.cn
+.de
+.uk
+.lt
+.jp
+.br
+.xyz
+.online
+.tech
+.store
+.ai

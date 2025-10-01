@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment files
+.env
+
+# Git
+.git
+.gitignore
+
+# Docker artifacts / logs
+*.log
+docker-compose.override.yml
+
+# IDE files
+.vscode/
+.idea/
+
+# Sandbox and development
+*.ipynb
+sandbox/
+*.code-workspace
+*.md
+venv/
+LICENSE

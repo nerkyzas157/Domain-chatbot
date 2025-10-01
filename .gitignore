@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment files
+.env
+mcp_dir/.env
+
+# Docker / Compose artifacts
+*.log
+docker-compose.override.yml
+
+# IDE / editor
+.vscode/
+.idea/
+
+# Mac OS
+.DS_Store
+
+# Sandbox
+*.ipynb
+sandbox/
+*.code-workspace
+venv/

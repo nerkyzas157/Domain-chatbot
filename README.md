@@ -92,7 +92,8 @@ Inside the single container, the chatbot contains two LangChain-OpenAI MCP agent
 
 ### MCP Tools
 
-MCP (Model Context Protocol) tools allow agents to:
+MCP was built with stdio transport to minimize response latency with negligible performance costs.  
+Tools allow agents to:
 
 * Check if TLDs are supported internally by reading a text file and comparing its content with user inputed TLDs.
 

@@ -25,7 +25,7 @@ Key features:
 - Simple yet elegant LangChain setup
 - Streamlit frontend
 - Multi-agent collaboration within a single container  
-- Easily extendable with new domain or other type of agents  
+- Easily extendable with new types of agents  
 - Example workflows and queries included  
 
 ---
@@ -58,10 +58,11 @@ This will:
 - Expose the chatbot interface as configured
 
 4. **Access the chatbot**  
-[HERE](http://localhost:8501/)
+By pressing [HERE](http://localhost:8501/) or by manually entering localhost URL into the browser.  
 Adjust port and/or set domain if there is a need.
 
 5. **Stop the container**
+This stops the application.  
 ```bash
 docker-compose down
 ```
@@ -83,7 +84,7 @@ Inside the single container, the chatbot contains two LangChain-OpenAI MCP agent
 * **Domain Suggestions Agent**  
     Set up on GPT-4.1 for it's attention to prompt details.  
     Suggests 3–5 alternative domains based on a keywords.  
-    Uses one MCP tool to chech generated domain availability:  
+    Uses one MCP tool to check generated domain availability:  
     * Global Availability Check Tool → checks if the full domain (like example.com ) is available globally through Hostinger or WhoisJSON API.
 
 * **Routing Agent**  
@@ -97,12 +98,12 @@ Tools allow agents to:
 
 * Check if TLDs are supported internally by reading a text file and comparing its content with user inputed TLDs.
 
-* Check if domain names are available globally by calling Hostinger global domain avilability API endpoint. If Hostinger API fails, re-routes to WhoisJSON API.
+* Check if domain names are available globally by calling Hostinger global domain availability API endpoint. If Hostinger API fails, re-routes to WhoisJSON API.
 
 ## Limitations
 
 Hostinger API endpoint has rate limit of 10 requests per minute. 
-If WhoisJSON API client is not set up, message responses regarding domain availability will fail.  
+If Hostinger API limit was exceeded and WhoisJSON API client is not set up, message responses regarding domain availability will fail.  
 WhoisJSON API provides only a month long free trial.  
   
 Context memory is not saved for continuous conversation. Due to this reason, follow-up questions are not possible.  

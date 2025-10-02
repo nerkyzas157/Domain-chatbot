@@ -41,7 +41,7 @@ cd Domain-chatbot
 ```
 
 2. **Configure environment variables**
-Create a .env file in the root directory with necessary keys:
+Create a .env file in the root directory and in the mcp_dir folder with necessary keys:
 ```ini
 OPENAI_API_KEY=your_api_key_here
 HOSTINGER_API_KEY=your_api_key_here

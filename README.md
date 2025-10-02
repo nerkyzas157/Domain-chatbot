@@ -109,13 +109,13 @@ Context memory is not saved for continuous conversation. Due to this reason, fol
 
 ## Example Conversations
 
-Example 1: Supported TLD and Available
+Example 1: Supported TLD but Taken
 ```makefile
 User: Is startupzone.com available?
 Bot: Yes, the .com TLD is supported. The domain startupzone.com is taken.
 ```
 
-Example 2: Supported TLD but Taken
+Example 2: Supported TLD and Available
 ```makefile
 User: Is faststartup.ai available?
 Bot: Yes, .ai is supported. The domain faststartup.ai is available!
